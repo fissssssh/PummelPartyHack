@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PummelPartyHack.Core", "PummelPartyHack.Core\PummelPartyHack.Core.csproj", "{B5F90E87-59A5-4423-9839-89AE5782C69F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PummelPartyHack.WPF", "PummelPartyHack.WPF\PummelPartyHack.WPF.csproj", "{6A17B366-8B0F-4063-AABE-4B392ABE6BD8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5F90E87-59A5-4423-9839-89AE5782C69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5F90E87-59A5-4423-9839-89AE5782C69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5F90E87-59A5-4423-9839-89AE5782C69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5F90E87-59A5-4423-9839-89AE5782C69F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A17B366-8B0F-4063-AABE-4B392ABE6BD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A17B366-8B0F-4063-AABE-4B392ABE6BD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A17B366-8B0F-4063-AABE-4B392ABE6BD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A17B366-8B0F-4063-AABE-4B392ABE6BD8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {63941F09-6F8A-4990-9AE5-8573F1A2858C}
+	EndGlobalSection
+EndGlobal

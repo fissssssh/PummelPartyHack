@@ -1,0 +1,27 @@
+﻿<Window x:Class="PummelPartyHack.WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Behaviors="http://schemas.microsoft.com/xaml/behaviors"
+        xmlns:local="clr-namespace:PummelPartyHack.WPF"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Title="PummelPartyHack" SizeToContent="Height" Width="200" d:DataContext="{d:DesignInstance Type=local:MainWindowViewModel}" Icon="Icon.ico">
+    <StackPanel Margin="8">
+        <DockPanel>
+            <TextBlock Text="奖杯数量："/>
+            <TextBox Text="{Binding TrophyCount,UpdateSourceTrigger=PropertyChanged,ValidatesOnExceptions=True,NotifyOnValidationError=True}">
+                <Behaviors:Interaction.Behaviors>
+                    <local:ExceptionValidationBehavior />
+                </Behaviors:Interaction.Behaviors>
+            </TextBox>
+        </DockPanel>
+        <Button Margin="0 8 0 0" Content="读取" Command="{Binding GetTrophyCountCommand,Mode=OneWay}" />
+        <Button Margin="0 8 0 0" Content="修改" Command="{Binding SetTrophyCountCommand,Mode=OneWay}" />
+        <TextBlock Margin="0 8 0 0" TextAlignment="Center">
+            <Hyperlink NavigateUri="https://github.com/fissssssh/PummelPartyHack/issues" Command="{Binding OpenBrowserCommand}" CommandParameter="{Binding RelativeSource={RelativeSource Self}, Path=NavigateUri}">Github issues</Hyperlink>
+        </TextBlock>
+    </StackPanel>
+</Window>
